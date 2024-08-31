@@ -1,0 +1,198 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #007bff;
+    padding: 15px 30px;
+    color: #fff;
+}
+
+/* .nav .logo a {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+} */
+
+.nav .right-links a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav .right-links .btn {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav .right-links .btn:hover {
+    background-color: #ff1a1a;
+}
+
+/* Main Content */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.main-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.main-box .top, .main-box .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main-box .box p {
+    font-size: 1.2em;
+}
+
+.main-box .box p b {
+    color: #007bff;
+}
+
+/* Sliding Image Section */
+.background1 {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.background1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.news18.com/ibnlive/uploads/2023/08/happy-independence-day-2023-best-wishes-images-quotes-wallpapers-slogans-logo.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    animation: slide 12s infinite;
+}
+
+/* @keyframes slide {
+    0% {
+        opacity: 1;
+        background-image: url('https://images.news18.com/ibnlive/uploads/2023/08/happy-independence-day-2023-best-wishes-images-quotes-wallpapers-slogans-logo.jpg');
+    }
+    33% {
+        opacity: 0;
+    }
+    33.1% {
+        opacity: 1;
+        background-image: url('https://media.istockphoto.com/id/464623500/photo/group-of-people-waving-indian-flags-in-back-lit.jpg?s=612x612&w=0&k=20&c=kpiw0XVr-Sjc0iaSKXVcXbP2otCdPaH0-N90avg2NIg=');
+    }
+    66% {
+        opacity: 0;
+    }
+    66.1% {
+        opacity: 1;
+        background-image: url('https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg');
+    }
+    100% {
+        opacity: 0;
+    }
+} */
+
+/* Content Overlay on Sliding Images */
+.content1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+.content1 h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.button-container1 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.button-container1 a {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button-container1 a:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav .logo a {
+        font-size: 1.2em;
+    }
+
+    .nav .right-links {
+        margin-top: 10px;
+    }
+
+    .main-box {
+        padding: 15px;
+    }
+
+    .background1 {
+        height: 200px;
+    }
+
+    .content1 h1 {
+        font-size: 2em;
+    }
+
+    .button-container1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

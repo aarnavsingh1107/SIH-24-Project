@@ -1,0 +1,72 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Full-screen gradient background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(120deg, #00c6ff, #0072ff);
+    /* background-image: url('https://images.news18.com/ibnlive/uploads/2023/08/happy-independence-day-2023-best-wishes-images-quotes-wallpapers-slogans-logo.jpg'); */
+}
+
+/* Centered form container with shadow and rounded edges */
+.container {
+    background-color: #fff;
+    padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Form header styling */
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Styling for all input fields */
+input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+
+/* Focus effect for inputs */
+input:focus {
+    border-color: #0072ff;
+    background-color: #eaf4ff;
+    outline: none;
+}
+
+/* Button styling with hover effects */
+button {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0072ff;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+}

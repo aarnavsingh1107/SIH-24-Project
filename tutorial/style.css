@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0; /* Removed padding to make the background image cover the entire viewport */
+    background-color: #f0f2f5; /* Light gray background for fallback */
+    background-image: url('https://images.news18.com/ibnlive/uploads/2023/08/happy-independence-day-2023-best-wishes-images-quotes-wallpapers-slogans-logo.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Make the body take up the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Header Styles */
+h1, h2 {
+    text-align: center;
+    color: #343a40; /* Darker color for contrast */
+    font-weight: 700; /* Bold font for headers */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+/* Form Styles */
+form {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Adds a blur effect to the form background */
+}
+
+/* Input and Textarea Styles */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: 1px solid #ced4da; /* Light border color */
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Light blue shadow on focus */
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745; /* Green background for buttons */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+button:active {
+    background-color: #1e7e34; /* Even darker green on click */
+    transform: scale(0.98);
+}
+
+/* Flexbox Container for Centering */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Position headline at the top */
+    align-items: center;
+    padding-top: 40px; /* Add padding at the top to make space for the headline */
+}
+
+/* Header at the Top */
+h2 {
+    position: absolute;
+    top: 20px; /* Positioning the header near the top of the page */
+    width: 100%;
+    text-align: center;
+}

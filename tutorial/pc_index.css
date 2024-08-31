@@ -1,0 +1,91 @@
+/* Basic reset */
+body, h1, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: rgb(243, 248, 245);
+}
+body {
+    background-image:url('https://images.news18.com/ibnlive/uploads/2023/08/happy-independence-day-2023-best-wishes-images-quotes-wallpapers-slogans-logo.jpg');
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    position: relative;
+}
+
+/* Sliding background */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    animation: slide 50s infinite;
+}
+
+/* Keyframes for multiple background images */
+@keyframes slide {
+    70% { background-image: url('https://images.news18.com/ibnlive/uploads/2023/08/happy-independence-day-2023-best-wishes-images-quotes-wallpapers-slogans-logo.jpg'); }
+    50% { background-image: url('https://media.istockphoto.com/id/464623500/photo/group-of-people-waving-indian-flags-in-back-lit.jpg?s=612x612&w=0&k=20&c=kpiw0XVr-Sjc0iaSKXVcXbP2otCdPaH0-N90avg2NIg='); }
+    /* 25.01% { background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg'); }
+    50% { background-image: url('https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg'); }
+    50.01% { background-image: url('https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630.jpg'); }
+    75% { background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg'); }
+    75.01% { background-image: url('https://static.vecteezy.com/system/resources/previews/026/722/501/non_2x/illustration-image-nature-and-sustainability-eco-friendly-living-and-conservation-concept-art-of-earth-and-animal-life-in-different-environments-generative-ai-illustration-free-photo.jpg'); }
+    100% { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYTRzLea_0zPoz0O7aO_fsZNjo8V5g5FEEpA&s'); } */
+}
+
+/* Content styling */
+.content {
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: rgba(168, 216, 242, 0.7);
+    text-decoration: none;
+    padding: 12px 30px;
+    margin: 10px 0;
+    border-radius: 50px;
+    border: 2px solid #0e0404;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #e12699;
+    color: #9f1111;
+    border-color: #f5ebeb;
+}
+
+a:active {
+    background-color: #292bd6;
+}
+
+a:visited {
+    color: #e12699;
+}
